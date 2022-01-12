@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RentBill" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a0eca54f-d09d-41eb-849d-6e690d75793d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Database Connection"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="SearchId" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT * FROM RentPayment WHERE rentId=$P{SearchId}]]>
+	</queryString>
+	<field name="rentInvoiceNo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="rentInvoiceNo"/>
+		<property name="com.jaspersoft.studio.field.label" value="rentInvoiceNo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rentpayment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rentId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="rentId"/>
+		<property name="com.jaspersoft.studio.field.label" value="rentId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rentpayment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="clientId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="clientId"/>
+		<property name="com.jaspersoft.studio.field.label" value="clientId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rentpayment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vehicleId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="vehicleId"/>
+		<property name="com.jaspersoft.studio.field.label" value="vehicleId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rentpayment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="returnDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="returnDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="returnDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rentpayment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="damageDetail" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="damageDetail"/>
+		<property name="com.jaspersoft.studio.field.label" value="damageDetail"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rentpayment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="damageCost" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="damageCost"/>
+		<property name="com.jaspersoft.studio.field.label" value="damageCost"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rentpayment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="discount" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="discount"/>
+		<property name="com.jaspersoft.studio.field.label" value="discount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rentpayment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="total"/>
+		<property name="com.jaspersoft.studio.field.label" value="total"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rentpayment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="5" width="555" height="55" uuid="a44e3265-14da-4f7e-b4b7-cc4c32dd1f3f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Caboo - Make Your Trip Enjoyable]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="41" splitType="Stretch">
+			<textField>
+				<reportElement x="255" y="11" width="100" height="30" uuid="296246ba-d024-4634-9c5d-b7c802819847"/>
+				<textFieldExpression><![CDATA[$P{SearchId}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="67" height="30" uuid="e6248126-2b3b-4417-8775-99ebb65b577c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bb252232-5fa1-426c-90d6-9ac54162f064"/>
+				</reportElement>
+				<text><![CDATA[rentInvoiceNo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="0" width="61" height="30" uuid="409bb8fd-112c-48d4-872d-72c3024426ac">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c0a1552e-3879-428e-ac9c-7ae50dfb4ea6"/>
+				</reportElement>
+				<text><![CDATA[rentId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="128" y="0" width="61" height="30" uuid="a018a55e-f9b4-407b-a8c7-8a73aa4bce44">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4365e4ba-e207-482c-b1e9-a44f029830ee"/>
+				</reportElement>
+				<text><![CDATA[clientId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="189" y="0" width="61" height="30" uuid="ff24c2cd-0952-4eac-8bfd-b7ea8a56c9c5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8f7a25bf-6913-434c-9823-26791f6284fb"/>
+				</reportElement>
+				<text><![CDATA[vehicleId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="0" width="61" height="30" uuid="867b6bfd-f6f2-419c-b3cb-f418e665bb81">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c0c7a82a-5bde-4e16-a744-e5fb83245651"/>
+				</reportElement>
+				<text><![CDATA[returnDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="0" width="61" height="30" uuid="c5674340-9d96-4bbd-add2-94a7337fe80f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="243fd5f4-62d9-4d13-8912-a588aedf7017"/>
+				</reportElement>
+				<text><![CDATA[damageDetail]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="372" y="0" width="61" height="30" uuid="2658c901-d329-43be-9ee0-7f41cfa8f05d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7aa400b8-89ba-4f30-86dc-8ce79c9f9c69"/>
+				</reportElement>
+				<text><![CDATA[damageCost]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="433" y="0" width="61" height="30" uuid="e4453218-4c2d-4bb9-a5ae-0cd19662cbe6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="583f0ac9-f84c-4c42-a71a-16195bb2950f"/>
+				</reportElement>
+				<text><![CDATA[discount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="494" y="0" width="61" height="30" uuid="92dff678-4a3e-4440-906a-c32bb771936f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bde94ae3-6aa3-4f48-96d6-a57419e5c0e0"/>
+				</reportElement>
+				<text><![CDATA[total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="67" height="30" uuid="b78b48da-2b55-436d-9f5a-175f64d00972">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bb252232-5fa1-426c-90d6-9ac54162f064"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{rentInvoiceNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="67" y="0" width="61" height="30" uuid="d0d3079d-c33d-4c83-a168-d030a27d4ea9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c0a1552e-3879-428e-ac9c-7ae50dfb4ea6"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{rentId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="128" y="0" width="61" height="30" uuid="46e69344-dad9-419a-a370-1ce1ede72f0d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4365e4ba-e207-482c-b1e9-a44f029830ee"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{clientId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="189" y="0" width="61" height="30" uuid="e4be01a6-fcea-4616-bd93-93fb5500d1da">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8f7a25bf-6913-434c-9823-26791f6284fb"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{vehicleId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="0" width="61" height="30" uuid="3482b9fd-4c4e-4f30-b8d7-7beb2e48854b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c0c7a82a-5bde-4e16-a744-e5fb83245651"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{returnDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="311" y="0" width="61" height="30" uuid="4368128d-0063-41bd-a3f9-068c1bd8cbc0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="243fd5f4-62d9-4d13-8912-a588aedf7017"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{damageDetail}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="372" y="0" width="61" height="30" uuid="a4448076-f372-446c-a843-70876d546002">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7aa400b8-89ba-4f30-86dc-8ce79c9f9c69"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{damageCost}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="433" y="0" width="61" height="30" uuid="caf25b4b-adcc-44e5-a280-28b3274f3088">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="583f0ac9-f84c-4c42-a71a-16195bb2950f"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{discount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="494" y="0" width="61" height="30" uuid="d1e67919-f0d1-4ac6-a723-e87f23f7ae80">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bde94ae3-6aa3-4f48-96d6-a57419e5c0e0"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

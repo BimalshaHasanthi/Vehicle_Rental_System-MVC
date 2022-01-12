@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginFormContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.loginFormController">
+   <children>
+      <AnchorPane fx:id="loginFormContext2" prefHeight="1080.0" prefWidth="1616.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="1088.0" fitWidth="1920.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/loginbackground2.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtName" focusColor="WHITE" labelFloat="true" layoutX="1163.0" layoutY="480.0" prefHeight="47.0" prefWidth="321.0" promptText="User Name" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtpassword" focusColor="WHITE" labelFloat="true" layoutX="1163.0" layoutY="554.0" prefHeight="47.0" prefWidth="321.0" promptText="Password" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="1230.0" layoutY="642.0" onAction="#loginDashboardOnAction" prefHeight="55.0" prefWidth="187.0" style="-fx-background-color: #fdb92e; -fx-background-radius: 50;" text="Login">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="1147.0" layoutY="777.0" prefHeight="23.0" prefWidth="321.0" text="Forgot your password? Need help?" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Montserrat Light Italic" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="55.0" fitWidth="58.0" layoutX="1092.0" layoutY="479.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icnUser.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="48.0" layoutX="1097.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icnKey.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1468.0" layoutY="909.0" text="Version 1.0.0" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Light" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

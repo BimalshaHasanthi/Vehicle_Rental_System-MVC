@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loadContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientModifyFormController">
+   <children>
+      <AnchorPane layoutX="1.0" layoutY="2.0" prefHeight="961.0" prefWidth="1454.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+         <children>
+            <ImageView fitHeight="961.0" fitWidth="1484.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/background6.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnModify" buttonType="RAISED" layoutX="991.0" layoutY="583.0" onAction="#modifyClientOnAction" prefHeight="54.0" prefWidth="226.0" style="-fx-background-color: #ffd166; -fx-background-radius: 50;" text="Modify">
+               <font>
+                  <Font name="Montserrat SemiBold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnCancel" buttonType="RAISED" layoutX="734.0" layoutY="583.0" onAction="#backToClientDetailsOnAction" prefHeight="54.0" prefWidth="226.0" style="-fx-background-color: ced4da; -fx-background-radius: 50;" text="Cancel">
+               <font>
+                  <Font name="Montserrat SemiBold" size="25.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="256.0" layoutY="312.0" prefHeight="37.0" prefWidth="235.0" text="Modify Client">
+               <font>
+                  <Font name="Montserrat SemiBold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="242.0" layoutY="414.0" prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Client Id  : ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="521.0" layoutY="414.0" prefHeight="30.0" prefWidth="149.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Client Name  : ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="249.0" layoutY="490.0" prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: white;" styleClass="textLabel" text="Address  : ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="922.0" layoutY="414.0" prefHeight="30.0" prefWidth="59.0" style="-fx-background-color: white;" styleClass="textLabel" text="NIC  : ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="666.0" layoutY="493.0" prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: white;" styleClass="textLabel" text="Contact  : ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="347.0" layoutY="409.0" prefHeight="40.0" prefWidth="154.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtClientId" layoutX="8.0" layoutY="5.0" onAction="#searchIdOnAction" prefHeight="31.0" prefWidth="136.0" promptText="C001" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="666.0" layoutY="409.0" prefHeight="41.0" prefWidth="226.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtClientName" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="204.0" promptText="Amal Perera" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="347.0" layoutY="488.0" prefHeight="41.0" prefWidth="300.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtAddress" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="271.0" promptText="Galle" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="981.0" layoutY="409.0" prefHeight="40.0" prefWidth="292.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtNIC" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="271.0" promptText="9989801459V" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="756.0" layoutY="488.0" prefHeight="40.0" prefWidth="292.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtContact" layoutX="8.0" layoutY="5.0" prefHeight="31.0" prefWidth="271.0" promptText="0785698365" styleClass="textField" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VehicleAvailabilityFormController">
+   <children>
+      <AnchorPane layoutX="1.0" layoutY="1.0" prefHeight="961.0" prefWidth="1454.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+         <children>
+            <ImageView fitHeight="961.0" fitWidth="1474.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/background5.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="51.0" layoutY="52.0" prefHeight="37.0" prefWidth="353.0" text="Vehicle Detail View">
+               <font>
+                  <Font name="Montserrat SemiBold" size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblVehicle" layoutX="51.0" layoutY="144.0" prefHeight="735.0" prefWidth="1383.0" stylesheets="@../style/TableForm.css">
+               <columns>
+                  <TableColumn fx:id="colVehicleId" prefWidth="159.0" text="Vehicle Id" />
+                  <TableColumn fx:id="colVehicleNo" prefWidth="151.0" text="Vehicle No" />
+                  <TableColumn fx:id="colType" prefWidth="144.0" text="Type" />
+                  <TableColumn fx:id="colBrand" prefWidth="156.0" text="Brand" />
+                  <TableColumn fx:id="colColour" prefWidth="121.0" text="Colour" />
+                  <TableColumn fx:id="colRentCost" prefWidth="165.0" text="Rental Cost Per Day" />
+                  <TableColumn fx:id="colHireCost" prefWidth="164.0" text="Hire Cost Per km" />
+                  <TableColumn fx:id="colDiscount" prefWidth="165.0" text="Discount" />
+                  <TableColumn fx:id="colStatus" prefWidth="156.0" text="Vehicle Status" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

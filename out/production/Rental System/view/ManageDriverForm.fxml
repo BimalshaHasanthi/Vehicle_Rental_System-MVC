@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="driverDetailContext" prefHeight="930.0" prefWidth="1454.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageDriverFormController">
+   <children>
+      <AnchorPane prefHeight="961.0" prefWidth="1454.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+         <children>
+            <ImageView fitHeight="961.0" fitWidth="1580.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/background5.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="51.0" layoutY="52.0" prefHeight="37.0" prefWidth="235.0" text="Driver Details">
+               <font>
+                  <Font name="Montserrat SemiBold" size="30.0" />
+               </font>
+            </Label>
+            <Separator layoutX="51.0" layoutY="306.0" prefHeight="9.0" prefWidth="1002.0" />
+            <TableView fx:id="tblDriver" layoutX="50.0" layoutY="444.0" prefHeight="459.0" prefWidth="1300.0" stylesheets="@../style/TableForm.css">
+               <columns>
+                  <TableColumn fx:id="colDriverId" prefWidth="189.0" text="Driver Id" />
+                  <TableColumn fx:id="colDriverName" prefWidth="200.0" text="Driver Name" />
+                  <TableColumn fx:id="colNIC" minWidth="0.0" prefWidth="233.0" text="NIC" />
+                  <TableColumn fx:id="colAddress" minWidth="0.0" prefWidth="197.0" text="Address" />
+                  <TableColumn fx:id="colContact" minWidth="0.0" prefWidth="197.0" text="Contacts" />
+                  <TableColumn fx:id="colLicenseId" minWidth="0.0" prefWidth="288.0" text="License Id" />
+                  <TableColumn fx:id="colLicenseNumber" minWidth="0.0" prefWidth="272.0" text="LicenseNumer" />
+                  <TableColumn fx:id="colExpireDate" minWidth="0.0" prefWidth="332.0" text="Expire Date" />
+                  <TableColumn fx:id="colStatus" prefWidth="348.0" text="Status" />
+               </columns>
+            </TableView>
+            <AnchorPane layoutX="51.0" layoutY="151.0" prefHeight="40.0" prefWidth="154.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtDriverId" layoutX="8.0" layoutY="7.0" prefHeight="31.0" prefWidth="136.0" promptText="D001" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="70.0" layoutY="139.0" prefHeight="23.0" prefWidth="96.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Driver Id">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="228.0" layoutY="151.0" prefHeight="40.0" prefWidth="261.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtDriverName" layoutX="8.0" layoutY="7.0" prefHeight="31.0" prefWidth="244.0" promptText="Kamal Silva" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="247.0" layoutY="139.0" prefHeight="23.0" prefWidth="123.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Driver Name">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="509.0" layoutY="148.0" prefHeight="40.0" prefWidth="261.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtNIC" layoutX="8.0" layoutY="7.0" prefHeight="31.0" prefWidth="244.0" promptText="C001" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="528.0" layoutY="136.0" prefHeight="23.0" prefWidth="41.0" style="-fx-background-color: white;" styleClass="textLabel" text=" NIC">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="806.0" layoutY="145.0" prefHeight="40.0" prefWidth="261.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtAddress" layoutX="8.0" layoutY="7.0" onKeyPressed="#driverAddress_KeyPress" onKeyReleased="#textFieldsRealeased" prefHeight="31.0" prefWidth="235.0" promptText="Colombo" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="825.0" layoutY="133.0" prefHeight="23.0" prefWidth="89.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Address">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="1093.0" layoutY="142.0" prefHeight="40.0" prefWidth="235.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtDriverContact" layoutX="8.0" layoutY="7.0" prefHeight="31.0" prefWidth="226.0" promptText="07759684235" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="1112.0" layoutY="130.0" prefHeight="23.0" prefWidth="89.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Contact">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="51.0" layoutY="227.0" prefHeight="40.0" prefWidth="314.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtDriverStatus" layoutX="8.0" layoutY="7.0" prefHeight="31.0" prefWidth="295.0" promptText="Available/Not Available/On Hire/OnRent" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="70.0" layoutY="215.0" prefHeight="23.0" prefWidth="71.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Status">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="51.0" layoutY="348.0" prefHeight="40.0" prefWidth="154.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtLicenseId" layoutX="8.0" layoutY="7.0" prefHeight="31.0" prefWidth="136.0" promptText="L001" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="70.0" layoutY="336.0" prefHeight="23.0" prefWidth="104.0" style="-fx-background-color: white;" styleClass="textLabel" text=" License Id">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="235.0" layoutY="348.0" prefHeight="40.0" prefWidth="261.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtLicenseNumber" layoutX="8.0" layoutY="7.0" prefHeight="31.0" prefWidth="236.0" promptText="C001" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="254.0" layoutY="336.0" prefHeight="23.0" prefWidth="168.0" style="-fx-background-color: white;" styleClass="textLabel" text=" License Number">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="528.0" layoutY="345.0" prefHeight="40.0" prefWidth="261.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtExpireDate" layoutX="8.0" layoutY="7.0" prefHeight="31.0" prefWidth="236.0" promptText="2030/02/28" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="547.0" layoutY="333.0" prefHeight="23.0" prefWidth="188.0" style="-fx-background-color: white;" styleClass="textLabel" text=" License Expire Date">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnAddDriver" buttonType="RAISED" layoutX="1124.0" layoutY="218.0" onAction="#AddDriverOnAction" prefHeight="54.0" prefWidth="226.0" style="-fx-background-color: #06d6a0; -fx-background-radius: 50;" text="Add">
+               <font>
+                  <Font name="Montserrat SemiBold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnModifyDriver" buttonType="RAISED" layoutX="1128.0" layoutY="288.0" onAction="#ModifyDriverOnAction" prefHeight="54.0" prefWidth="226.0" style="-fx-background-color: #ffd166; -fx-background-radius: 50;" text="Modify">
+               <font>
+                  <Font name="Montserrat SemiBold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnRemoveDriver" buttonType="RAISED" layoutX="1128.0" layoutY="357.0" onAction="#RemoveDriverOnAction" prefHeight="54.0" prefWidth="226.0" style="-fx-background-color: #ef476f; -fx-background-radius: 50;" text="Remove">
+               <font>
+                  <Font name="Montserrat SemiBold" size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

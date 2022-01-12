@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RentVehicleFormController">
+   <children>
+      <AnchorPane prefHeight="961.0" prefWidth="1419.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+         <children>
+            <ImageView fitHeight="986.0" fitWidth="1456.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/background4.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="51.0" layoutY="52.0" prefHeight="37.0" prefWidth="235.0" text="Rent Vehicle">
+               <font>
+                  <Font name="Montserrat SemiBold" size="30.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="44.0" layoutY="613.0" prefHeight="40.0" prefWidth="195.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtNoOfDays" layoutX="8.0" layoutY="5.0" onKeyPressed="#noOfDays_KeyPress" onKeyReleased="#textFieldsRealeased" prefHeight="31.0" prefWidth="180.0" promptText="00" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="63.0" layoutY="601.0" prefHeight="21.0" prefWidth="93.0" style="-fx-background-color: white;" styleClass="textLabel" text=" No Of Days" />
+            <AnchorPane layoutX="273.0" layoutY="608.0" prefHeight="40.0" prefWidth="292.0" styleClass="textPane" stylesheets="@../style/DetailForm.css">
+               <children>
+                  <TextField fx:id="txtAdvancePayment" layoutX="35.0" layoutY="5.0" onKeyPressed="#advancePayment_KeyPress" onKeyReleased="#textFieldsRealeased" prefHeight="31.0" prefWidth="244.0" promptText="00000.00" styleClass="textField" />
+                  <Label layoutX="14.0" layoutY="10.0" text="Rs." />
+               </children>
+            </AnchorPane>
+            <Label layoutX="292.0" layoutY="596.0" prefHeight="21.0" prefWidth="133.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Advance payment " />
+            <JFXComboBox fx:id="cmbClientId" layoutX="151.0" layoutY="225.0" prefHeight="31.0" prefWidth="148.0" />
+            <Label layoutX="51.0" layoutY="227.0" text="Client Id  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="331.0" layoutY="228.0" text="Client Name  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtClientName" editable="false" layoutX="464.0" layoutY="225.0" />
+            <Label layoutX="675.0" layoutY="227.0" text="NIC  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNIC" editable="false" layoutX="737.0" layoutY="223.0" prefHeight="31.0" prefWidth="228.0" />
+            <Label layoutX="1001.0" layoutY="229.0" text="Address  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAddress" editable="false" layoutX="1111.0" layoutY="225.0" prefHeight="31.0" prefWidth="244.0" />
+            <JFXComboBox fx:id="cmbVehicleId" layoutX="166.0" layoutY="404.0" prefHeight="31.0" prefWidth="161.0" />
+            <Label layoutX="51.0" layoutY="406.0" text="Vehicle Id  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="354.0" layoutY="406.0" text="Vehicle Number  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtVehicleNo" editable="false" layoutX="526.0" layoutY="403.0" prefHeight="31.0" prefWidth="209.0" />
+            <Label layoutX="760.0" layoutY="406.0" text="Type  :">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtVehicleType" editable="false" layoutX="827.0" layoutY="401.0" prefHeight="31.0" prefWidth="168.0" />
+            <Label layoutX="1046.0" layoutY="405.0" text="Vehicle Brand  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtBrand" editable="false" layoutX="1194.0" layoutY="402.0" prefHeight="31.0" prefWidth="161.0" />
+            <Label layoutX="646.0" layoutY="476.0" text="Insurence Id  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtInsurenceId" editable="false" layoutX="789.0" layoutY="472.0" prefHeight="31.0" prefWidth="168.0" />
+            <Label layoutX="357.0" layoutY="476.0" text="Colour  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtColour" editable="false" layoutX="441.0" layoutY="471.0" prefHeight="31.0" prefWidth="168.0" />
+            <Label layoutX="987.0" layoutY="475.0" text="Cost For Rent A Day  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtRentCost" editable="false" layoutX="1194.0" layoutY="472.0" prefHeight="31.0" prefWidth="161.0" />
+            <Label layoutX="54.0" layoutY="142.0" text="Rent Id  : ">
+               <font>
+                  <Font name="Montserrat Black" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRentId" layoutX="170.0" layoutY="142.0" text="rentId">
+               <font>
+                  <Font name="Montserrat Black" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="840.0" layoutY="58.0" text="Date  : ">
+               <font>
+                  <Font name="Montserrat Black" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="929.0" layoutY="58.0" prefHeight="26.0" prefWidth="161.0" text="YYYY:MM:DD">
+               <font>
+                  <Font name="Montserrat Black" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="1105.0" layoutY="58.0" text="Time  : ">
+               <font>
+                  <Font name="Montserrat Black" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="1194.0" layoutY="58.0" prefHeight="26.0" prefWidth="161.0" text="HH:MM:SS">
+               <font>
+                  <Font name="Montserrat Black" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnRent" buttonType="RAISED" layoutX="1079.0" layoutY="706.0" onAction="#makeRentOnAction" prefHeight="54.0" prefWidth="276.0" style="-fx-background-color: #06d6a0; -fx-background-radius: 50;" text="Make Rent">
+               <font>
+                  <Font name="Montserrat SemiBold" size="25.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="57.0" layoutY="477.0" text="Discount  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtDiscount" editable="false" layoutX="159.0" layoutY="472.0" prefHeight="31.0" prefWidth="148.0" />
+            <Separator layoutX="46.0" layoutY="560.0" prefHeight="8.0" prefWidth="1307.0" />
+            <Label layoutX="329.0" layoutY="290.0" text="Contact  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtContact" editable="false" layoutX="434.0" layoutY="287.0" prefHeight="31.0" prefWidth="209.0" />
+            <Separator layoutX="50.0" layoutY="339.0" prefHeight="8.0" prefWidth="1307.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

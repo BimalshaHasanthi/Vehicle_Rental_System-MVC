@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminViewFormController">
+   <children>
+      <AnchorPane fx:id="manageDetailContext" layoutX="-2.0" layoutY="-2.0" prefHeight="961.0" prefWidth="1454.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+         <children>
+            <ImageView fitHeight="964.0" fitWidth="1457.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/background5.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="128.0" layoutY="79.0" prefHeight="164.0" prefWidth="357.0" style="-fx-background-color: #b79ced; -fx-background-radius: 50;">
+               <children>
+                  <Label layoutX="36.0" layoutY="28.0" text="No Of Rented Vehicles">
+                     <font>
+                        <Font name="Montserrat Medium" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblRented" layoutX="164.0" layoutY="82.0" text="R" textAlignment="CENTER">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="522.0" layoutY="79.0" prefHeight="164.0" prefWidth="357.0" style="-fx-background-color: ffee93; -fx-background-radius: 50;">
+               <children>
+                  <Label layoutX="47.0" layoutY="28.0" text="No Of Hired Vehicles">
+                     <font>
+                        <Font name="Montserrat Medium" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblHired" layoutX="162.0" layoutY="82.0" text="H" textAlignment="CENTER">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="922.0" layoutY="79.0" prefHeight="164.0" prefWidth="357.0" style="-fx-background-color: #00a896; -fx-background-radius: 50;">
+               <children>
+                  <Label layoutX="25.0" layoutY="31.0" text="No Of Available Vehicles">
+                     <font>
+                        <Font name="Montserrat Medium" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblAvailable" layoutX="163.0" layoutY="82.0" prefHeight="50.0" prefWidth="32.0" text="A" textAlignment="CENTER">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="47.0" layoutY="334.0" prefHeight="164.0" prefWidth="420.0" style="-fx-background-color: #06d6a0; -fx-background-radius: 50;">
+               <children>
+                  <Label layoutX="88.0" layoutY="30.0" text="Vehicle Rent Income">
+                     <font>
+                        <Font name="Montserrat Medium" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblRentIncome" layoutX="125.0" layoutY="81.0" prefHeight="50.0" prefWidth="265.0" text="R0000.00">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="36.0" layoutY="81.0" prefHeight="50.0" prefWidth="69.0" text="Rs.">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="498.0" layoutY="334.0" prefHeight="164.0" prefWidth="420.0" style="-fx-background-color: #ffc09f; -fx-background-radius: 50;">
+               <children>
+                  <Label layoutX="88.0" layoutY="30.0" text="Vehicle Hire Income">
+                     <font>
+                        <Font name="Montserrat Medium" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblHireIncome" layoutX="127.0" layoutY="81.0" prefHeight="50.0" prefWidth="263.0" text="R0000.00">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="36.0" layoutY="81.0" prefHeight="50.0" prefWidth="69.0" text="Rs.">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="955.0" layoutY="334.0" prefHeight="164.0" prefWidth="420.0" style="-fx-background-color: #91e5f6; -fx-background-radius: 50;">
+               <children>
+                  <Label layoutX="127.0" layoutY="30.0" text="Total Income">
+                     <font>
+                        <Font name="Montserrat Medium" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTotalIncome" layoutX="125.0" layoutY="81.0" prefHeight="50.0" prefWidth="265.0" text="R0000.00">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="36.0" layoutY="81.0" prefHeight="50.0" prefWidth="69.0" text="Rs.">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="btnHireIncomeReport" buttonType="RAISED" layoutX="147.0" layoutY="735.0" onAction="#hireIncomeReportOnAction" prefHeight="66.0" prefWidth="319.0" style="-fx-background-color: #1b3a4b; -fx-background-radius: 50;" text="Hire Income Report" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat SemiBold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnRentIncomeReport" buttonType="RAISED" layoutX="147.0" layoutY="640.0" onAction="#rentIncomeReportOnAction" prefHeight="66.0" prefWidth="319.0" style="-fx-background-color: #1b3a4b; -fx-background-radius: 50;" text="Rent Income Report" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat SemiBold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="889.0" layoutY="735.0" onAction="#printVehicleOnAction" prefHeight="66.0" prefWidth="319.0" style="-fx-background-color: #1b3a4b; -fx-background-radius: 50;" text="Print Vehicle Details" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat SemiBold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="889.0" layoutY="640.0" onAction="#printDriverOnAction" prefHeight="66.0" prefWidth="319.0" style="-fx-background-color: #1b3a4b; -fx-background-radius: 50;" text="Print Driver Details" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat SemiBold" size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
